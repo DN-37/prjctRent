@@ -54,3 +54,5 @@ const popularSlider = new Swiper('.popular-slider', {
       prevEl: '.slider-reviews-prev',
     },
   });
+
+ 

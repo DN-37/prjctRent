@@ -50,6 +50,24 @@ body {
     color: var(--text-color);
 }
 
+.link {
+    display: inline-block;
+    margin-top: 45px;
+    padding: 22px 42px;
+    background-color: var(--accent-color);
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 24px;
+    text-transform: capitalize;
+    transition: all .3s;
+    @media (any-hover: hover) {
+        &:hover {
+            background-color: #0a5e54;
+        }
+    }
+}
+
 .header {
     padding: clamp(1.25rem, 0.886rem + 1.82vw, 2.5rem) 0;
     &__container {
@@ -542,11 +560,15 @@ body {
 
 .reviews {
     position: relative;
+    padding-bottom: clamp(1.875rem, -0.852rem + 13.64vw, 11.25rem);
     .reviews-deco {
         position: absolute;
         top: -500px;
         left: 0;
         z-index: -1;
+        @media (max-width: 475px) {
+            width: 300px;
+        }
     }
     .swiper-wrapper {
         align-items: flex-start;
@@ -615,4 +637,91 @@ body {
 .slider-reviews-prev {
     transform: translateY(-2px) rotate(180deg);
 }
+
+.gallery {
+    background: linear-gradient(270deg, #1A242F 0.01%, rgba(26, 36, 47, 0) 82.97%);
+    padding: clamp(1.875rem, -0.489rem + 11.82vw, 10rem) 0;
+    &__container {
+        display: flex;
+        align-items: center;
+        gap: 63px;
+        @media (max-width: 992px) {
+            flex-direction: column;
+        }
+    }
+    &__box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        width: calc(720px / 1420px * 100%);
+        @media (max-width: 992px) {
+            width: 100%; 
+        }
+    }
+    &__item {
+        flex: 0 0 47%;
+        width: 350px;
+        aspect-ratio: 7/11;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    &__title {
+        @media (min-width: 992px) {
+            max-width: 520px;
+        }
+    }
+    &__text {
+        margin-top: 22px;
+    }
+    &__link {
+        display: inline-block;
+        margin-top: 45px;
+        padding: 22px 42px;
+        background-color: var(--accent-color);
+        text-decoration: none;
+        color: #fff;
+        font-weight: 500;
+        font-size: 24px;
+        text-transform: capitalize;
+    }
+}
+
+.begin {
+    position: relative;
+    padding: clamp(1.875rem, -0.852rem + 13.64vw, 11.25rem) 0;
+    .begin-wave { 
+        position: absolute;
+    }
+    .begin-rect {
+        position: absolute;
+        top: -77px;
+        right: 0;
+    }
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+        max-width: 1240px;
+    }
+    &__description {
+        font-weight: 600;
+        font-size: 68px;
+        line-height: 126%;
+        text-transform: capitalize;
+    }
+    &__content {
+        flex: 0 0 50%;
+    }
+    &__link {
+        margin-top: 50px;
+    }
+}
+
+
+
 
