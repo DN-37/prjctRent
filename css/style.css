@@ -15,7 +15,7 @@ ul {
 
 :root {
   --bg-color: #121B25;
-  --accent-color: #1AA090;
+  --accent-color: #0a29db;
   --text-color: #D6D6D6;
 }
 
@@ -707,9 +707,11 @@ body._lock {
   width: 350px;
   aspect-ratio: 7/11;
 }
+.gallery__item .swiper-wrapper {
+  position: relative;
+}
 .gallery__item img {
   height: 100%;
-  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
