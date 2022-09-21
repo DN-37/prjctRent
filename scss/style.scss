@@ -16,7 +16,7 @@ ul {
 
 :root {
     --bg-color: #121B25;
-    --accent-color: #1AA090;
+    --accent-color: #0a29db;
     --text-color: #D6D6D6;
 }
 
@@ -465,9 +465,11 @@ body {
 .swiper {
     overflow: hidden;
 }
+
 .swiper-wrapper {
     display: inline-flex;
 }
+
 .slider-buttons {
     position: absolute;
     top: 30%;
@@ -481,15 +483,18 @@ body {
         gap: 30px;  
     }
 }
+
 .popular-slider-prev {
     position: absolute;
     left: -130px;
 }
+
 .popular-slider-next {
     position: absolute;
     right: -130px;
     transform: rotate(180deg);
 }
+
 .popular-slider-btn {
     width: 78px;
     height: 78px;
@@ -504,6 +509,7 @@ body {
         display: none;
     }
 }
+
 .why {
     padding-top: clamp(1.875rem, -0.852rem + 13.64vw, 11.25rem);
     padding-bottom: clamp(1.875rem, 0.693rem + 5.91vw, 5.938rem);
@@ -521,6 +527,7 @@ body {
         }
     }
 }
+
 .item-why {
     display: flex;
     align-items: center;
@@ -591,6 +598,7 @@ body {
         color: var(--accent-color);
     }
 }
+
 .slider-reviews {
     &__text {
         font-weight: 400;
@@ -627,6 +635,7 @@ body {
         }
     }
 }
+
 .slider-reviews-btn {
     &.swiper-button-disabled {
         svg {
@@ -637,6 +646,7 @@ body {
         fill: #fff;
     }
 }
+
 .slider-reviews-prev {
     transform: translateY(-2px) rotate(180deg);
 }
@@ -666,9 +676,11 @@ body {
         flex: 0 0 47%;
         width: 350px;
         aspect-ratio: 7/11;
+        .swiper-wrapper {
+            position: relative;
+        }
         img {
             height: 100%;
-            width: 100%;
             object-fit: cover;
         }
     }
@@ -835,4 +847,3 @@ body {
         }
     }
 }
-
